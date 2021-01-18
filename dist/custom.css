@@ -7,6 +7,10 @@
     border-color: navy;
 }
 
+.reveal .icons.large img {
+    height: 250px;
+}
+
 .reveal .blocks {
     font-size: 25px;
 }
