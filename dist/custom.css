@@ -2,6 +2,9 @@
     height: 130px;
     margin: 5px;
     border-radius: 5px;
+}
+
+.reveal .icons.border img {
     border-width: 1px;
     border-style: solid;
     border-color: navy;

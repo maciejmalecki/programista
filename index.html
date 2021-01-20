@@ -135,15 +135,6 @@
         <section data-background-image="img/gender.png">
         </section>
         <section>
-            <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/-mL3zT1iIKw?start=910" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-            </iframe>
-        </section>
-        <section data-background-image="img/netflix-arch.jpg">
-        </section>
-        <section>
             <h4>Co się przydaje?</h4>
             <div class="r-vstack">
                 <div class="r-hstack icons large">
@@ -159,7 +150,44 @@
             </div>
         </section>
         <section>
-            <h3>Jak zacząć?</h3>
+            <h3>Jak wygląda program?</h3>
+            <pre>
+                <code data-trim>
+                    <script type="text/template">
+                        silnia(n) = 1*2*3*...*(n-1)*n
+                    </script>
+                </code>
+            </pre>
+            <p class="fragment" data-fragment-index="1">Program w Javascripcie</p>
+            <pre class="fragment" data-fragment-index="1">
+                <code data-trim>
+                    <script type="text/template">
+                    function silnia(n) {
+                      if ((n === 0) || (n === 1)) {
+                        return 1;
+                      } else {
+                        return n * silnia (n-1);
+                      }
+                    };
+                    </script>
+                </code>
+            </pre>
+        </section>
+        <section data-background-image="img/sample-medium-system.png">
+        </section>
+        <section>
+            <p>TODO: bardzo skomplikowany system</p>
+        </section>
+        <!--
+        <section>
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/-mL3zT1iIKw?start=910" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </section>
+        -->
+        <section data-background-image="img/netflix-arch.jpg">
         </section>
         <section>
             <h3>Języki programowania</h3>
@@ -168,6 +196,58 @@
                 <img src="img/wanted-languages-2.png" alt="Part 2">
             </div>
             <p>Wynik ankiety StackOverflow: "most wanted languages", 2020.</p>
+        </section>
+        <section>
+            <h3>Jak zacząć?</h3>
+            <div class="r-vstack">
+                <div class="r-hstack icons large fragment">
+                    <div>
+                        <p>Kurs języka Python przygotowany przez Centrum Edukacji Obywatelskiej.</p>
+                        <a href="https://python101.readthedocs.io/">https://python101.readthedocs.io/</a>
+                    </div>
+                    <img src="img/python101.png" alt="python101qr">
+                </div>
+                <div class="r-hstack icons large fragment">
+                    <img src="img/pygame.png" alt="pygame-logo">
+                    <div>
+                        <p>Biblioteki do tworzenia gier w Pythonie.</p>
+                        <a href="https://www.pygame.org/">https://www.pygame.org/</a>
+                    </div>
+                    <img src="img/pygame-qr.png" alt="pygame-qr">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>PyGame</h3>
+            <div class="r-vstack">
+                <div class="r-hstack icons large">
+                    <img src="img/pygame-1.png" alt="1">
+                    <img src="img/pygame-2.png" alt="2">
+                    <img src="img/pygame-3.jpg" alt="3">
+                </div>
+                <div class="r-hstack icons large">
+                    <img src="img/pygame-7.png" alt="7">
+                    <img src="img/pygame-5.jpg" alt="5">
+                    <img src="img/pygame-6.png" alt="6">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Javascript - phaser</h3>
+            <div class="r-hstack stretch">
+                <img src="img/phaser.png" alt="Phaser">
+                <div>
+                    <p>Tworzenie gier działających na przeglądarkach oraz na smartfonach.</p>
+                    <a href="https://phaser.io/">https://phaser.io/</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Visual Studio Code</h3>
+            <div class="r-vstack stretch">
+                <img src="img/visual-studio-code.png" alt="VSC">
+                <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
+            </div>
         </section>
         <section>
             <h3>Wrocławskie uczelnie i kierunki informatyczne</h3>
@@ -188,7 +268,7 @@
     // - https://revealjs.com/config/
     Reveal.initialize({
         hash: true,
-
+        slideNumber: true,
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
     });
