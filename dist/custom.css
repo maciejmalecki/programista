@@ -36,3 +36,19 @@
 .reveal .whole-width {
     width: 70%;
 }
+
+.reveal .color1 {
+    color: cadetblue;
+}
+.reveal .color2 {
+    color: darkviolet;
+}
+.reveal .color3 {
+    color: steelblue;
+}
+.reveal .color4 {
+    color: palegreen;
+}
+.reveal .color5 {
+    color: indianred;
+}
