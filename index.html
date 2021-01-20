@@ -151,32 +151,26 @@
         </section>
         <section>
             <h3>Jak wygląda program?</h3>
-            <pre>
-                <code data-trim>
-                    <script type="text/template">
-                        silnia(n) = 1*2*3*...*(n-1)*n
-                    </script>
-                </code>
-            </pre>
-            <p class="fragment" data-fragment-index="1">Program w Javascripcie</p>
-            <pre class="fragment" data-fragment-index="1">
+            <p style="color: #74a7cb;"><code>silnia(n) = 1*2*3*...*(n-1)*n</code></p>
+            <img src="img/silnia-wzor.png" alt="Fact" class="fragment" data-fragment-index="1">
+            <p class="fragment" data-fragment-index="2">Program w Javascripcie</p>
+            <pre class="fragment" data-fragment-index="2">
                 <code data-trim>
                     <script type="text/template">
                     function silnia(n) {
-                      if ((n === 0) || (n === 1)) {
-                        return 1;
-                      } else {
-                        return n * silnia (n-1);
-                      }
-                    };
+                        if (n === 0) {
+                            return 1;
+                        } else {
+                            return n * silnia (n-1);
+                        }
+                    }
                     </script>
                 </code>
             </pre>
         </section>
         <section data-background-image="img/sample-medium-system.png">
         </section>
-        <section>
-            <p>TODO: bardzo skomplikowany system</p>
+        <section data-background-image="img/complicated-uml.png">
         </section>
         <!--
         <section>
